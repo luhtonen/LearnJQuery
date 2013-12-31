@@ -26,3 +26,17 @@ a.henrylink {
     padding: 2px;
     border: 1px solid #000;
 }
+a.external {
+    background: #fff url(../images/external.png) no-repeat 100% 2px;
+    padding-right: 16px;
+}
+tr {
+    background-color: #fff;
+}
+.alt {
+    background-color: #ccc;
+}
+.highlight {
+    font-weight: bold;
+    font-style: italic;
+}
