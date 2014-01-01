@@ -1,5 +1,5 @@
 /* 
-    Created on : Dec 27, 2013, 11:44:21 PM
+    Created on : Dec 31, 2013, 1:36:26 PM
     Author     : luhtonen
 */
 /***************************************
@@ -35,14 +35,6 @@ code {
 }
 a {
   color: #06581f;
-}
-.horizontal {
-    float: left;
-    list-style: none;
-    margin: 10px;
-}
-.sub-level {
-    background: #ccc;
 }
 /***************************************
    Chapter Styles
@@ -82,6 +74,12 @@ a.external {
   background: #fff url(../images/external.png) no-repeat 100% 2px;
   padding-right: 16px;
 }
+ul.tragedy {
+  border: 1px solid #999;
+}
+li.afterlink {
+  border-right: 4px solid #090;
+}
 table {
   border-collapse: collapse;
 }
@@ -105,4 +103,13 @@ th, td {
 }
 .bold {
   font-weight: bold;
+}
+.special {
+  color: #f00;
+}
+.year {
+  background-color: #888;
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
 }
