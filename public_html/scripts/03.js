@@ -2,13 +2,13 @@ $(document).ready(function() {
     $('#switcher-default')
         .addClass('selected')
         .on('click', function() {
-            $('body').removeClass('narrow').removeClass('large');
+            $('body').removeClass();
         });
     $('#switcher-narrow').on('click', function() {
-        $('body').addClass('narrow').removeClass('large');
+        $('body').removeClass().addClass('narrow');
     });
     $('#switcher-large').on('click', function() {
-        $('body').removeClass('narrow').addClass('large');
+        $('body').removeClass().addClass('large');
     });
     $('#switcher button').on('click', function() {
         $('#switcher button').removeClass('selected');
