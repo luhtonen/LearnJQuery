@@ -69,3 +69,6 @@ body.narrow .chapter {
 .selected {
     font-weight: bold;
 }
+.hidden {
+    display: none;
+}

@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $('#switcher h3').click(function() {
+        $('#switcher button').toggleClass('hidden');
+    });
     $('#switcher-default').addClass('selected');
     $('#switcher button').click(function() {
         var bodyClass = this.id.split('-')[1];
