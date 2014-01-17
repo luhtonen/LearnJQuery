@@ -4,10 +4,13 @@ $(document).ready(function() {
     }, function() {
         $(this).removeClass('hover');
     });
-    $('#switcher').click(function(event) {
+    $('#switcher').on('click.collapse', function(event) {
         if (!$(event.target).is('button')) {
             $('#switcher button').toggleClass('hidden');
         }
+    });
+    $('#switcher-narrow, #switcher-large').click(function() {
+        $('#switcher').off('click.collapse');
     });
     $('#switcher-default').addClass('selected');
     $('#switcher').click(function(event) {
