@@ -72,3 +72,7 @@ body.narrow .chapter {
 .hidden {
     display: none;
 }
+.hover {
+    cursor: pointer;
+    background-color: #afa;
+}
