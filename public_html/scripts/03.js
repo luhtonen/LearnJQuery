@@ -9,12 +9,12 @@ $(document).ready(function() {
             $('#switcher button').toggleClass('hidden');
         }
     };
-    $('#switcher').on('click.collapse', toggleSwitcher);
-    $('#switcher-narrow, #switcher-large').click(function() {
-        $('#switcher').off('click.collapse');
-    });
-    $('#switcher-default').click(function() {
-        $('#switcher').on('click.collapse', toggleSwitcher);
+    $('#switcher').on('click', toggleSwitcher);
+    $('#switcher button').click(function() {
+        $('#switcher').off('click', toggleSwitcher);
+        if (this.id === 'switcher-default') {
+            $('#switcher').on('click', toggleSwitcher);
+        }
     });
     $('#switcher-default').addClass('selected');
     $('#switcher').click(function(event) {
