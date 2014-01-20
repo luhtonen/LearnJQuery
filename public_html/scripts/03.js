@@ -10,7 +10,7 @@ $(document).ready(function() {
         }
     };
     $('#switcher').on('click', toggleSwitcher);
-    $('#switcher').trigger('click');
+    $('#switcher').click();
     
     $('#switcher button').click(function() {
         $('#switcher').off('click', toggleSwitcher);
