@@ -4,13 +4,17 @@ $(document).ready(function() {
     }, function() {
         $(this).removeClass('hover');
     });
-    $('#switcher').on('click.collapse', function(event) {
+    var toggleSwitcher = function(event) {
         if (!$(event.target).is('button')) {
             $('#switcher button').toggleClass('hidden');
         }
-    });
+    };
+    $('#switcher').on('click.collapse', toggleSwitcher);
     $('#switcher-narrow, #switcher-large').click(function() {
         $('#switcher').off('click.collapse');
+    });
+    $('#switcher-default').click(function() {
+        $('#switcher').on('click.collapse', toggleSwitcher);
     });
     $('#switcher-default').addClass('selected');
     $('#switcher').click(function(event) {
