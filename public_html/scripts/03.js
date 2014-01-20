@@ -10,6 +10,8 @@ $(document).ready(function() {
         }
     };
     $('#switcher').on('click', toggleSwitcher);
+    $('#switcher').trigger('click');
+    
     $('#switcher button').click(function() {
         $('#switcher').off('click', toggleSwitcher);
         if (this.id === 'switcher-default') {
