@@ -27,4 +27,16 @@ $(document).ready(function() {
             $(event.target).addClass('selected');
         }
     });
+    
+    var triggers = {
+        D: 'default',
+        N: 'narrow',
+        L: 'large'
+    };
+    $(document).keyup(function(event) {
+        var key = String.fromCharCode(event.which);
+        if (key in triggers) {
+            $('#switcher-' + triggers[key]).click();
+        }
+    });
 });
