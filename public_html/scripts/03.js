@@ -42,7 +42,11 @@ $(document).ready(function() {
     });
     // Call setBodyClass() when a key is pressed
     $(document).keyup(function(event) {
-        var key = String.fromCharCode(event.which);
+        var keyCode = event.which;
+        if (keyCode === 39) {
+            console.log('right arrow pressed');
+        }
+        var key = String.fromCharCode(keyCode);
         if (key in triggers) {
             setBodyClass(triggers[key]);
         }
